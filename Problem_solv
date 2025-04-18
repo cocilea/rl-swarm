@@ -1,0 +1,9 @@
+1.[FIX] PS1 unbound variable
+
+sudo nano nano ~/.bashrc
+
+# add+++ on the top
+case $- in
+    *i*) ;;
+    *) return;;
+esac
